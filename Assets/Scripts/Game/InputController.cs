@@ -1,3 +1,7 @@
+/*
+ * 输入控制
+ */
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +24,7 @@ public class InputController : MonoBehaviour
         game.onGamePaused.AddListener(OnGamePaused);
     }
 
+    //允许输入
     public void EnableInput()
     {
         LeanTouch.OnFingerDown = OnFingerDown;
@@ -27,6 +32,7 @@ public class InputController : MonoBehaviour
         LeanTouch.OnFingerUp = OnFingerUp;
     }
 
+    //禁止输入
     public void DisableInput()
     {
         LeanTouch.OnFingerDown = _ => { };
@@ -34,6 +40,7 @@ public class InputController : MonoBehaviour
         LeanTouch.OnFingerUp = _ => { };
     }
 
+    //移除 note
     public void OnNoteCollected(Note note)
     {
         if (note.Type == NoteType.Hold || note.Type == NoteType.LongHold)
@@ -48,6 +55,7 @@ public class InputController : MonoBehaviour
         }
     }
 
+    //游戏暂停
     public void OnGamePaused(Game game)
     {
         HoldingNotes.Values.ForEach(note =>
@@ -82,16 +90,9 @@ public class InputController : MonoBehaviour
                 TouchableHoldNotes.Add((HoldNote) note);
             }
         }
-
-        // // Make sure to query non-flick notes first
-        // TouchableNormalNotes.Sort((a, b) =>
-        // {
-        //     if (a.GetType() == b.GetType()) return a.Model.id - b.Model.id;
-        //     if (a is FlickNote) return 1;
-        //     return -1;
-        // });
     }
 
+    //手指按下的操作
     protected virtual void OnFingerDown(LeanFinger finger)
     {
         var pressedPosition = game.camera.orthographic

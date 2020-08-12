@@ -1,3 +1,7 @@
+/*
+ * 列举 note 的分数
+ */
+
 public enum NoteGrade
 {
     Perfect = 4,

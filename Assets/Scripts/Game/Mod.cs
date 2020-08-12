@@ -1,4 +1,8 @@
-﻿public enum Mod
+﻿/*
+ * 列举 Mod 的种类
+ */
+
+public enum Mod
 {
     FlipX,
     FlipY,

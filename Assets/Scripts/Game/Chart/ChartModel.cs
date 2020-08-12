@@ -1,4 +1,5 @@
-﻿using System;
+﻿//谱面数据原型（模板）
+using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using UnityEngine;

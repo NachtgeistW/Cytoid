@@ -1,3 +1,7 @@
+/*
+ *收集品元信息？
+ */
+
 using System;
 using System.Collections.Generic;
 

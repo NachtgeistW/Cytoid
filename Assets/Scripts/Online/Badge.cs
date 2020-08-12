@@ -1,3 +1,7 @@
+/*
+ *奖牌之类的
+ */
+
 using System;
 
 [Serializable]

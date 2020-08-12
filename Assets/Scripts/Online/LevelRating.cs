@@ -1,3 +1,7 @@
+/*
+ * 玩家 rating
+ */
+
 using System;
 
 [Serializable]

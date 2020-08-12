@@ -1,3 +1,7 @@
+/*
+ * 定义个人信息的相关类
+ */
+
 using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;

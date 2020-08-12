@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * 游戏本体
+ */
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;

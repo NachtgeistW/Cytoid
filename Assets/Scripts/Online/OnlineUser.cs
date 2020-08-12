@@ -1,3 +1,7 @@
+/*
+ * 在线的用户数据
+ */
+
 using System;
 using Newtonsoft.Json;
 

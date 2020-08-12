@@ -1,3 +1,7 @@
+/*
+ *活动元信息？
+ */
+
 using System;
 using JetBrains.Annotations;
 

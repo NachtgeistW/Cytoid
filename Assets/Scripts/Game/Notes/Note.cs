@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * note的定义类
+ */
+
+using System;
 using MoreMountains.NiceVibrations;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
@@ -252,6 +256,7 @@ public abstract class Note : MonoBehaviour
         if (grade != NoteGrade.None) Clear(grade);
     }
 
+    //判定区间以及note分数的划分
     public virtual NoteGrade CalculateGrade()
     {
         var grade = NoteGrade.None;

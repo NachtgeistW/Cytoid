@@ -1,4 +1,5 @@
-﻿using System;
+﻿//实例化的谱面
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Newtonsoft.Json;
